@@ -82,6 +82,12 @@ img {
   background: none;
   padding: 5px 15px;
   border-radius: 5px;
-  border: 1px solid rgb(228, 178, 178)
+  border: 1px solid rgb(228, 178, 178);
+  transition: box-shadow 0.3s ease;
+}
+
+.book__buy:hover {
+  box-shadow: 0 0 0 2px rgb(197, 107, 107);
+  /* border: 2px solid rgb(197, 107, 107); */
 }
 
