@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/stype.css">
+  <title>Books</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <h1 class="haeder__heading">Kitoblar sayti</h1>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <ul class="books__list"></ul>
+    </div>
+  </section>
+
+
+  <template id="book__template">
+    <li class="book__item">
+      <div class="book__name-wrapper">
+        <p class="book__name">
+        </p>
+        <span class="book__author"></span>
+      </div>
+      <div class="book__about-wrapper">
+        <span class="book__price"></span>
+        <button type="sumbit" class="book__buy">Buy</button>
+      </div>
+    </li>
+  </template>
+
+  <script src="./index.js"></script>
+</body>
+</html>
