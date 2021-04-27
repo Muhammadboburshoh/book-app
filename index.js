@@ -1,4 +1,4 @@
-const GRAPHQL_URL = 'http://localhost:5020/'
+const GRAPHQL_URL = 'http://localhost:5050/'
 
 const getBooksQuery = `
   {
@@ -10,8 +10,16 @@ const getBooksQuery = `
       }
     }
   }
-
 `
+
+/* const getBooksQuery = `
+  {
+    books {
+      name
+      price
+    }
+  }
+` */
 
 async function fetchFunction(query) {
 
@@ -27,6 +35,7 @@ async function fetchFunction(query) {
 
   const {data} = await response.json()
   return data
+
 }
 
 ;(async () => {
@@ -50,8 +59,8 @@ async function fetchFunction(query) {
     let bookAuthor = booksEl.querySelector('.book__author')
 
     bookName.textContent = "Name: " + book.name
-    bookPrice.textContent= "Price: " + book.price
-    bookAuthor.textContent = "Author: " + book.author.name
+    bookPrice.textContent= "Price: " + book.price + " so'm"
+    // bookAuthor.textContent = "Author: " + book.author.name
 
     elBooksFragment.appendChild(booksEl)
 
